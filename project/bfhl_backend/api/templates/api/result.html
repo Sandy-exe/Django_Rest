@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFHL Results</title>
+</head>
+
+<body>
+    <h1>Results</h1>
+    <p><strong>Success:</strong> {{ is_success }}</p>
+    <p><strong>User ID:</strong> {{ user_id }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Roll Number:</strong> {{ roll_number }}</p>
+    <p><strong>Numbers:</strong> {{ numbers }}</p>
+    <p><strong>Alphabets:</strong> {{ alphabets }}</p>
+    <p><strong>Highest Lowercase Alphabet:</strong> {{ highest_lowercase_alphabet }}</p>
+    <a href="{% url 'bfhl_endpoint' %}">Go back</a>
+</body>
+
+</html>
